@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"io/ioutil"
 
+	"proto/protobuf/types"
+
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/timestamppb"
-	"proto/protobuf/types"
 )
 
 func main() {

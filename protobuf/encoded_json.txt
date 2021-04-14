@@ -1,1 +1,1 @@
-{"Tokens":[{"Symbol":"okt","Decimal":18,"Infos":[{"TotalSupply":1024,"Type":0},{"TotalSupply":2048,"Type":1}],"IcoTime":"2021-04-14T15:12:52.553665+08:00"},{"Symbol":"okb","Decimal":18,"Infos":[{"TotalSupply":4096,"Type":1}],"IcoTime":"2021-04-14T15:12:52.553665+08:00"}]}
+{"Tokens":[{"Symbol":"okt","Decimal":18,"Infos":[{"TotalSupply":1024,"Type":0},{"TotalSupply":2048,"Type":1}],"IcoTime":"2021-04-14T16:00:53.91744+08:00"},{"Symbol":"okb","Decimal":18,"Infos":[{"TotalSupply":4096,"Type":1}],"IcoTime":"2021-04-14T16:00:53.91744+08:00"}]}

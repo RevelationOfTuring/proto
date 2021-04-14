@@ -2,9 +2,11 @@ package main
 
 import (
 	"fmt"
-	"google.golang.org/protobuf/proto"
 	"io/ioutil"
+
 	"proto/protobuf/types"
+
+	"google.golang.org/protobuf/proto"
 )
 
 func main() {
