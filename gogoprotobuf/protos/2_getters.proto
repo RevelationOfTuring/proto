@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package types;
+
+option go_package = "./;protobuf";
+
+message Struct{
+  int32 salary = 1;
+}

@@ -6,10 +6,7 @@ option go_package = "./;gogoprotobuf";
 
 import "github.com/gogo/protobuf/gogoproto/gogo.proto";
 
-enum MyEnum{
-  option (gogoproto.goproto_enum_prefix) = false;
-  Black = 0;
-  White = 1;
-  Red = 2;
-  Yellow = 3;
+message Struct{
+  option (gogoproto.goproto_getters) = false;
+  int32 salary = 1;
 }
