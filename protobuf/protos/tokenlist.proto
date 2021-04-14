@@ -1,0 +1,44 @@
+// protobuf3版本声明
+syntax = "proto3";
+
+// 在proto中的包名
+package types;
+
+// 需要引用到proto中自带的timestamp结构作为成员变量
+import "google/protobuf/timestamp.proto";
+
+// 分号前：生成对应x.pb.go文件的存放地址，自动生成文件路径(基于命令行给入的--go_out的参数)
+// 分号后：生成对应x.pb.go文件所属的包名（go中的package）
+option go_package="./types;types";
+
+// 定义token结构（message）
+message Token{
+  // string类型
+  string symbol = 1;
+  // int32类型
+  int32 decimal = 2;
+  // 枚举类型
+  enum CoinType{
+    OIP10 = 0;
+    OIP20 = 1;
+  }
+
+  // 定义子结构
+  message TokenInfo{
+    int64 total_supply = 1;
+    CoinType coin_type = 2;
+  }
+
+  // 自定义类数组
+  repeated TokenInfo infos = 3;
+
+  // 引用protobuf自带的结构
+  google.protobuf.Timestamp ico_time = 4;
+}
+
+// 定义tokenlist（Token的集合）
+message TokenList{
+  repeated Token tokens = 1;
+}
+
+// 执行：protoc  --go_out=. -I=protos  tokenlist.proto 来生成tokenlist.pb.go文件
