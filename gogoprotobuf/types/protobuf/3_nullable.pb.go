@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.26.0
 // 	protoc        v3.15.8
-// source: 4_nullable.proto
+// source: 3_nullable.proto
 
 package protobuf
 
@@ -32,7 +32,7 @@ type Test1 struct {
 func (x *Test1) Reset() {
 	*x = Test1{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file__4_nullable_proto_msgTypes[0]
+		mi := &file__3_nullable_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -45,7 +45,7 @@ func (x *Test1) String() string {
 func (*Test1) ProtoMessage() {}
 
 func (x *Test1) ProtoReflect() protoreflect.Message {
-	mi := &file__4_nullable_proto_msgTypes[0]
+	mi := &file__3_nullable_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -58,7 +58,7 @@ func (x *Test1) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Test1.ProtoReflect.Descriptor instead.
 func (*Test1) Descriptor() ([]byte, []int) {
-	return file__4_nullable_proto_rawDescGZIP(), []int{0}
+	return file__3_nullable_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *Test1) GetTest2() *Test2 {
@@ -86,7 +86,7 @@ type Test2 struct {
 func (x *Test2) Reset() {
 	*x = Test2{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file__4_nullable_proto_msgTypes[1]
+		mi := &file__3_nullable_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -99,7 +99,7 @@ func (x *Test2) String() string {
 func (*Test2) ProtoMessage() {}
 
 func (x *Test2) ProtoReflect() protoreflect.Message {
-	mi := &file__4_nullable_proto_msgTypes[1]
+	mi := &file__3_nullable_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -112,7 +112,7 @@ func (x *Test2) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Test2.ProtoReflect.Descriptor instead.
 func (*Test2) Descriptor() ([]byte, []int) {
-	return file__4_nullable_proto_rawDescGZIP(), []int{1}
+	return file__3_nullable_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *Test2) GetMsg() string {
@@ -122,10 +122,10 @@ func (x *Test2) GetMsg() string {
 	return ""
 }
 
-var File__4_nullable_proto protoreflect.FileDescriptor
+var File__3_nullable_proto protoreflect.FileDescriptor
 
-var file__4_nullable_proto_rawDesc = []byte{
-	0x0a, 0x10, 0x34, 0x5f, 0x6e, 0x75, 0x6c, 0x6c, 0x61, 0x62, 0x6c, 0x65, 0x2e, 0x70, 0x72, 0x6f,
+var file__3_nullable_proto_rawDesc = []byte{
+	0x0a, 0x10, 0x33, 0x5f, 0x6e, 0x75, 0x6c, 0x6c, 0x61, 0x62, 0x6c, 0x65, 0x2e, 0x70, 0x72, 0x6f,
 	0x74, 0x6f, 0x12, 0x05, 0x74, 0x79, 0x70, 0x65, 0x73, 0x22, 0x3d, 0x0a, 0x05, 0x54, 0x65, 0x73,
 	0x74, 0x31, 0x12, 0x22, 0x0a, 0x05, 0x74, 0x65, 0x73, 0x74, 0x32, 0x18, 0x01, 0x20, 0x01, 0x28,
 	0x0b, 0x32, 0x0c, 0x2e, 0x74, 0x79, 0x70, 0x65, 0x73, 0x2e, 0x54, 0x65, 0x73, 0x74, 0x32, 0x52,
@@ -137,23 +137,23 @@ var file__4_nullable_proto_rawDesc = []byte{
 }
 
 var (
-	file__4_nullable_proto_rawDescOnce sync.Once
-	file__4_nullable_proto_rawDescData = file__4_nullable_proto_rawDesc
+	file__3_nullable_proto_rawDescOnce sync.Once
+	file__3_nullable_proto_rawDescData = file__3_nullable_proto_rawDesc
 )
 
-func file__4_nullable_proto_rawDescGZIP() []byte {
-	file__4_nullable_proto_rawDescOnce.Do(func() {
-		file__4_nullable_proto_rawDescData = protoimpl.X.CompressGZIP(file__4_nullable_proto_rawDescData)
+func file__3_nullable_proto_rawDescGZIP() []byte {
+	file__3_nullable_proto_rawDescOnce.Do(func() {
+		file__3_nullable_proto_rawDescData = protoimpl.X.CompressGZIP(file__3_nullable_proto_rawDescData)
 	})
-	return file__4_nullable_proto_rawDescData
+	return file__3_nullable_proto_rawDescData
 }
 
-var file__4_nullable_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
-var file__4_nullable_proto_goTypes = []interface{}{
+var file__3_nullable_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
+var file__3_nullable_proto_goTypes = []interface{}{
 	(*Test1)(nil), // 0: types.Test1
 	(*Test2)(nil), // 1: types.Test2
 }
-var file__4_nullable_proto_depIdxs = []int32{
+var file__3_nullable_proto_depIdxs = []int32{
 	1, // 0: types.Test1.test2:type_name -> types.Test2
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
@@ -162,13 +162,13 @@ var file__4_nullable_proto_depIdxs = []int32{
 	0, // [0:1] is the sub-list for field type_name
 }
 
-func init() { file__4_nullable_proto_init() }
-func file__4_nullable_proto_init() {
-	if File__4_nullable_proto != nil {
+func init() { file__3_nullable_proto_init() }
+func file__3_nullable_proto_init() {
+	if File__3_nullable_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file__4_nullable_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file__3_nullable_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Test1); i {
 			case 0:
 				return &v.state
@@ -180,7 +180,7 @@ func file__4_nullable_proto_init() {
 				return nil
 			}
 		}
-		file__4_nullable_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file__3_nullable_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Test2); i {
 			case 0:
 				return &v.state
@@ -197,18 +197,18 @@ func file__4_nullable_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file__4_nullable_proto_rawDesc,
+			RawDescriptor: file__3_nullable_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   2,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file__4_nullable_proto_goTypes,
-		DependencyIndexes: file__4_nullable_proto_depIdxs,
-		MessageInfos:      file__4_nullable_proto_msgTypes,
+		GoTypes:           file__3_nullable_proto_goTypes,
+		DependencyIndexes: file__3_nullable_proto_depIdxs,
+		MessageInfos:      file__3_nullable_proto_msgTypes,
 	}.Build()
-	File__4_nullable_proto = out.File
-	file__4_nullable_proto_rawDesc = nil
-	file__4_nullable_proto_goTypes = nil
-	file__4_nullable_proto_depIdxs = nil
+	File__3_nullable_proto = out.File
+	file__3_nullable_proto_rawDesc = nil
+	file__3_nullable_proto_goTypes = nil
+	file__3_nullable_proto_depIdxs = nil
 }

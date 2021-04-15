@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.26.0
 // 	protoc        v3.15.8
-// source: 2_getters.proto
+// source: 1_getters.proto
 
 package protobuf
 
@@ -31,7 +31,7 @@ type Struct struct {
 func (x *Struct) Reset() {
 	*x = Struct{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file__2_getters_proto_msgTypes[0]
+		mi := &file__1_getters_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -44,7 +44,7 @@ func (x *Struct) String() string {
 func (*Struct) ProtoMessage() {}
 
 func (x *Struct) ProtoReflect() protoreflect.Message {
-	mi := &file__2_getters_proto_msgTypes[0]
+	mi := &file__1_getters_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -57,7 +57,7 @@ func (x *Struct) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Struct.ProtoReflect.Descriptor instead.
 func (*Struct) Descriptor() ([]byte, []int) {
-	return file__2_getters_proto_rawDescGZIP(), []int{0}
+	return file__1_getters_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *Struct) GetSalary() int32 {
@@ -67,10 +67,10 @@ func (x *Struct) GetSalary() int32 {
 	return 0
 }
 
-var File__2_getters_proto protoreflect.FileDescriptor
+var File__1_getters_proto protoreflect.FileDescriptor
 
-var file__2_getters_proto_rawDesc = []byte{
-	0x0a, 0x0f, 0x32, 0x5f, 0x67, 0x65, 0x74, 0x74, 0x65, 0x72, 0x73, 0x2e, 0x70, 0x72, 0x6f, 0x74,
+var file__1_getters_proto_rawDesc = []byte{
+	0x0a, 0x0f, 0x31, 0x5f, 0x67, 0x65, 0x74, 0x74, 0x65, 0x72, 0x73, 0x2e, 0x70, 0x72, 0x6f, 0x74,
 	0x6f, 0x12, 0x05, 0x74, 0x79, 0x70, 0x65, 0x73, 0x22, 0x20, 0x0a, 0x06, 0x53, 0x74, 0x72, 0x75,
 	0x63, 0x74, 0x12, 0x16, 0x0a, 0x06, 0x73, 0x61, 0x6c, 0x61, 0x72, 0x79, 0x18, 0x01, 0x20, 0x01,
 	0x28, 0x05, 0x52, 0x06, 0x73, 0x61, 0x6c, 0x61, 0x72, 0x79, 0x42, 0x0d, 0x5a, 0x0b, 0x2e, 0x2f,
@@ -79,22 +79,22 @@ var file__2_getters_proto_rawDesc = []byte{
 }
 
 var (
-	file__2_getters_proto_rawDescOnce sync.Once
-	file__2_getters_proto_rawDescData = file__2_getters_proto_rawDesc
+	file__1_getters_proto_rawDescOnce sync.Once
+	file__1_getters_proto_rawDescData = file__1_getters_proto_rawDesc
 )
 
-func file__2_getters_proto_rawDescGZIP() []byte {
-	file__2_getters_proto_rawDescOnce.Do(func() {
-		file__2_getters_proto_rawDescData = protoimpl.X.CompressGZIP(file__2_getters_proto_rawDescData)
+func file__1_getters_proto_rawDescGZIP() []byte {
+	file__1_getters_proto_rawDescOnce.Do(func() {
+		file__1_getters_proto_rawDescData = protoimpl.X.CompressGZIP(file__1_getters_proto_rawDescData)
 	})
-	return file__2_getters_proto_rawDescData
+	return file__1_getters_proto_rawDescData
 }
 
-var file__2_getters_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file__2_getters_proto_goTypes = []interface{}{
+var file__1_getters_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file__1_getters_proto_goTypes = []interface{}{
 	(*Struct)(nil), // 0: types.Struct
 }
-var file__2_getters_proto_depIdxs = []int32{
+var file__1_getters_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
 	0, // [0:0] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -102,13 +102,13 @@ var file__2_getters_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file__2_getters_proto_init() }
-func file__2_getters_proto_init() {
-	if File__2_getters_proto != nil {
+func init() { file__1_getters_proto_init() }
+func file__1_getters_proto_init() {
+	if File__1_getters_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file__2_getters_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file__1_getters_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Struct); i {
 			case 0:
 				return &v.state
@@ -125,18 +125,18 @@ func file__2_getters_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file__2_getters_proto_rawDesc,
+			RawDescriptor: file__1_getters_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file__2_getters_proto_goTypes,
-		DependencyIndexes: file__2_getters_proto_depIdxs,
-		MessageInfos:      file__2_getters_proto_msgTypes,
+		GoTypes:           file__1_getters_proto_goTypes,
+		DependencyIndexes: file__1_getters_proto_depIdxs,
+		MessageInfos:      file__1_getters_proto_msgTypes,
 	}.Build()
-	File__2_getters_proto = out.File
-	file__2_getters_proto_rawDesc = nil
-	file__2_getters_proto_goTypes = nil
-	file__2_getters_proto_depIdxs = nil
+	File__1_getters_proto = out.File
+	file__1_getters_proto_rawDesc = nil
+	file__1_getters_proto_goTypes = nil
+	file__1_getters_proto_depIdxs = nil
 }

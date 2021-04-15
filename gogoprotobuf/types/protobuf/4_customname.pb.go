@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.26.0
 // 	protoc        v3.15.8
-// source: 5_customname.proto
+// source: 4_customname.proto
 
 package protobuf
 
@@ -32,7 +32,7 @@ type Test3 struct {
 func (x *Test3) Reset() {
 	*x = Test3{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file__5_customname_proto_msgTypes[0]
+		mi := &file__4_customname_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -45,7 +45,7 @@ func (x *Test3) String() string {
 func (*Test3) ProtoMessage() {}
 
 func (x *Test3) ProtoReflect() protoreflect.Message {
-	mi := &file__5_customname_proto_msgTypes[0]
+	mi := &file__4_customname_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -58,7 +58,7 @@ func (x *Test3) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Test3.ProtoReflect.Descriptor instead.
 func (*Test3) Descriptor() ([]byte, []int) {
-	return file__5_customname_proto_rawDescGZIP(), []int{0}
+	return file__4_customname_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *Test3) GetName() string {
@@ -75,10 +75,10 @@ func (x *Test3) GetNum() float64 {
 	return 0
 }
 
-var File__5_customname_proto protoreflect.FileDescriptor
+var File__4_customname_proto protoreflect.FileDescriptor
 
-var file__5_customname_proto_rawDesc = []byte{
-	0x0a, 0x12, 0x35, 0x5f, 0x63, 0x75, 0x73, 0x74, 0x6f, 0x6d, 0x6e, 0x61, 0x6d, 0x65, 0x2e, 0x70,
+var file__4_customname_proto_rawDesc = []byte{
+	0x0a, 0x12, 0x34, 0x5f, 0x63, 0x75, 0x73, 0x74, 0x6f, 0x6d, 0x6e, 0x61, 0x6d, 0x65, 0x2e, 0x70,
 	0x72, 0x6f, 0x74, 0x6f, 0x12, 0x05, 0x74, 0x79, 0x70, 0x65, 0x73, 0x22, 0x2d, 0x0a, 0x05, 0x54,
 	0x65, 0x73, 0x74, 0x33, 0x12, 0x12, 0x0a, 0x04, 0x6e, 0x61, 0x6d, 0x65, 0x18, 0x01, 0x20, 0x01,
 	0x28, 0x09, 0x52, 0x04, 0x6e, 0x61, 0x6d, 0x65, 0x12, 0x10, 0x0a, 0x03, 0x6e, 0x75, 0x6d, 0x18,
@@ -88,22 +88,22 @@ var file__5_customname_proto_rawDesc = []byte{
 }
 
 var (
-	file__5_customname_proto_rawDescOnce sync.Once
-	file__5_customname_proto_rawDescData = file__5_customname_proto_rawDesc
+	file__4_customname_proto_rawDescOnce sync.Once
+	file__4_customname_proto_rawDescData = file__4_customname_proto_rawDesc
 )
 
-func file__5_customname_proto_rawDescGZIP() []byte {
-	file__5_customname_proto_rawDescOnce.Do(func() {
-		file__5_customname_proto_rawDescData = protoimpl.X.CompressGZIP(file__5_customname_proto_rawDescData)
+func file__4_customname_proto_rawDescGZIP() []byte {
+	file__4_customname_proto_rawDescOnce.Do(func() {
+		file__4_customname_proto_rawDescData = protoimpl.X.CompressGZIP(file__4_customname_proto_rawDescData)
 	})
-	return file__5_customname_proto_rawDescData
+	return file__4_customname_proto_rawDescData
 }
 
-var file__5_customname_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file__5_customname_proto_goTypes = []interface{}{
+var file__4_customname_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file__4_customname_proto_goTypes = []interface{}{
 	(*Test3)(nil), // 0: types.Test3
 }
-var file__5_customname_proto_depIdxs = []int32{
+var file__4_customname_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
 	0, // [0:0] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -111,13 +111,13 @@ var file__5_customname_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file__5_customname_proto_init() }
-func file__5_customname_proto_init() {
-	if File__5_customname_proto != nil {
+func init() { file__4_customname_proto_init() }
+func file__4_customname_proto_init() {
+	if File__4_customname_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file__5_customname_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file__4_customname_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Test3); i {
 			case 0:
 				return &v.state
@@ -134,18 +134,18 @@ func file__5_customname_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file__5_customname_proto_rawDesc,
+			RawDescriptor: file__4_customname_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file__5_customname_proto_goTypes,
-		DependencyIndexes: file__5_customname_proto_depIdxs,
-		MessageInfos:      file__5_customname_proto_msgTypes,
+		GoTypes:           file__4_customname_proto_goTypes,
+		DependencyIndexes: file__4_customname_proto_depIdxs,
+		MessageInfos:      file__4_customname_proto_msgTypes,
 	}.Build()
-	File__5_customname_proto = out.File
-	file__5_customname_proto_rawDesc = nil
-	file__5_customname_proto_goTypes = nil
-	file__5_customname_proto_depIdxs = nil
+	File__4_customname_proto = out.File
+	file__4_customname_proto_rawDesc = nil
+	file__4_customname_proto_goTypes = nil
+	file__4_customname_proto_depIdxs = nil
 }
