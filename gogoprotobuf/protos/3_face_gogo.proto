@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package types;
+
+option go_package = "./;gogoprotobuf";
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+message Test {
+  option (gogoproto.goproto_getters) = false;
+  option (gogoproto.face) = true;
+  string msg = 1;
+  double num = 2;
+}
