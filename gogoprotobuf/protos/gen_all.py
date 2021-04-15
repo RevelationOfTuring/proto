@@ -20,6 +20,9 @@ elif sys.argv[1] == '3':
 elif sys.argv[1] == '4':
     proto_file = '4_nullable.proto'
     gogoproto_file = '4_nullable_gogo.proto'
+elif sys.argv[1] == '5':
+    proto_file = '5_customname.proto'
+    gogoproto_file = '5_customname_gogo.proto'
 
 # generate gogoproto file
 command = f'protoc -I {vendor_path} -I {proto_file_path} --gogo_out {gogoprotobuf_demo_path}/types/gogoprotobuf {gogoproto_file}'
