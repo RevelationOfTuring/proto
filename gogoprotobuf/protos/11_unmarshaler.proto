@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package types;
+
+option go_package = "./;protobuf";
+
+message Test11 {
+  Test11_1 t = 1;
+  string str = 2;
+  double num = 3;
+}
+
+message Test11_1{
+  string msg = 1;
+}
