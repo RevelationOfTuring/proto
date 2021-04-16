@@ -16,14 +16,14 @@ func BenchmarkMarshalJSON(b *testing.B) {
 }
 
 func BenchmarkMarshalAmino(b *testing.B) {
-	b.ResetTimer()
 	aminoCdc := amino.NewCodec()
+	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		_, _ = aminoCdc.MarshalBinaryLengthPrefixed(tokenListGo)
 	}
 }
 
-func BenchmarkMarshalGoProtobuf(b *testing.B) {
+func BenchmarkMarshalGoprotobuf(b *testing.B) {
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		_, _ = proto.Marshal(&tokenListProto)

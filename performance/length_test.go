@@ -126,7 +126,7 @@ func TestLength(t *testing.T) {
 	if err != nil {
 		log.Panic(err)
 	}
-	formatPrinter("protobuf", rawBytes)
+	formatPrinter("goprotobuf", rawBytes)
 
 	// 4. gogoprotobuf
 	rawBytes, err = tokenListGogoProto.Marshal()

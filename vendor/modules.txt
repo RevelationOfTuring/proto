@@ -9,6 +9,12 @@ github.com/gogo/protobuf/protoc-gen-gogo/descriptor
 github.com/gogo/protobuf/sortkeys
 github.com/gogo/protobuf/test/custom
 github.com/gogo/protobuf/types
+# github.com/pmezard/go-difflib v1.0.0
+github.com/pmezard/go-difflib/difflib
+# github.com/stretchr/testify v1.6.1
+## explicit
+github.com/stretchr/testify/assert
+github.com/stretchr/testify/require
 # github.com/tendermint/go-amino v0.15.1
 ## explicit
 github.com/tendermint/go-amino
@@ -40,3 +46,5 @@ google.golang.org/protobuf/reflect/protoregistry
 google.golang.org/protobuf/runtime/protoiface
 google.golang.org/protobuf/runtime/protoimpl
 google.golang.org/protobuf/types/known/timestamppb
+# gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c
+gopkg.in/yaml.v3
