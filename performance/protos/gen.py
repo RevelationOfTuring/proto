@@ -9,3 +9,8 @@ proto_file_path = f'{performance_demo_path}/protos'
 command = f'protoc -I {vendor_path} -I {proto_file_path} --gogo_out {performance_demo_path}/types tokenlist_gogo.proto'
 print(command)
 os.system(command)
+
+# generate proto file
+command = f'protoc -I {proto_file_path} --go_out {performance_demo_path}/types tokenlist.proto'
+print(command)
+os.system(command)

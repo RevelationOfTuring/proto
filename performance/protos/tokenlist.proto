@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package types;
+
+option go_package = "./protobuf;protobuf";
+
+message Token{
+  string symbol = 1;
+  int32 decimal = 2;
+
+  enum CoinType{
+    OIP10 = 0;
+    OIP20 = 1;
+  }
+
+  message TokenInfo{
+    int64 total_supply = 1;
+    CoinType coin_type = 2;
+  }
+
+  repeated TokenInfo infos = 3;
+}
+
+message TokenList{
+  repeated Token tokens = 1;
+}
