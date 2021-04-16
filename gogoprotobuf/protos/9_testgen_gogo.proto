@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package types;
+
+option go_package = "./;gogoprotobuf";
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+option (gogoproto.testgen_all) = true;
+option (gogoproto.benchgen_all) = true;
+option (gogoproto.populate_all) = true;
+option (gogoproto.equal_all) = true;
+
+message Test9 {
+  Test9_1 t = 1;
+  string str = 2;
+  double num = 3;
+}
+
+message Test9_1{
+  string msg = 1;
+}

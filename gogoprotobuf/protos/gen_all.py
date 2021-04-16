@@ -7,7 +7,7 @@ vendor_path = f'{project_path}/vendor'
 proto_file_path = f'{gogoprotobuf_demo_path}/protos'
 
 file_names = ['enum_prefix', 'getters', 'face', 'nullable', 'customname', 'stringer', 'gostring', 'populate',
-              'customtype']
+              'customtype', 'testgen']
 
 index = int(sys.argv[1])
 
