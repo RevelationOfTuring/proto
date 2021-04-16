@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package types;
+
+option go_package = "./;gogoprotobuf";
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+message Test8 {
+  repeated bytes code = 1[(gogoproto.customtype) = "github.com/gogo/protobuf/test/custom.Uint128"];
+}
