@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package types;
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+option go_package = "./gogoprotobuf;gogoprotobuf";
+
+option (gogoproto.marshaler_all) = true;
+option (gogoproto.unmarshaler_all) = true;
+option (gogoproto.sizer_all) = true;
+option (gogoproto.goproto_getters_all) = false;
+
+
+message Token{
+  string symbol = 1;
+  int32 decimal = 2;
+
+  enum CoinType{
+    option (gogoproto.goproto_enum_prefix) = false;
+    OIP10 = 0;
+    OIP20 = 1;
+  }
+
+  message TokenInfo{
+    int64 total_supply = 1;
+    CoinType coin_type = 2;
+  }
+
+  repeated TokenInfo infos = 3;
+}
+
+message TokenList{
+  repeated Token tokens = 1;
+}

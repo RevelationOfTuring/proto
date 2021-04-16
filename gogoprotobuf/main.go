@@ -13,7 +13,7 @@ func main() {
 	testProto.Name = "michael.w"
 	fmt.Println(testProto.String())
 
-	// go text format
+	// golang text format
 	var testGogoProto gogoprotobuf.Test6
 	testGogoProto.Name = "michael.w"
 	fmt.Printf("%#v\n", testGogoProto)
