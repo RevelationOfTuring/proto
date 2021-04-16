@@ -4,13 +4,14 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
+	"testing"
+
+	"proto/performance/types/gogoprotobuf"
+	"proto/performance/types/golang"
 	"proto/performance/types/protobuf"
 
 	"github.com/tendermint/go-amino"
 	"google.golang.org/protobuf/proto"
-	"proto/performance/types/gogoprotobuf"
-	"proto/performance/types/golang"
-	"testing"
 )
 
 const (
@@ -137,6 +138,7 @@ func TestLength(t *testing.T) {
 
 func formatPrinter(kind string, rawBytes []byte) {
 	fmt.Printf(`================================================================================================================================================
+
 %s:
 	length: 	%d
 	encoded:	%s
