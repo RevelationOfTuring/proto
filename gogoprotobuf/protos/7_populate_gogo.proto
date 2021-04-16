@@ -6,9 +6,8 @@ option go_package = "./;gogoprotobuf";
 
 import "github.com/gogo/protobuf/gogoproto/gogo.proto";
 
-message Test2 {
-  option (gogoproto.goproto_getters) = false;
-  option (gogoproto.face) = true;
-  string msg = 1;
-  double num = 2;
+message Test7 {
+  option (gogoproto.populate) = true;
+  string str = 1;
+  repeated bytes code = 2;
 }

@@ -9,12 +9,12 @@ import (
 
 func main() {
 	// protobuf text format
-	var testProto protobuf.Test4
+	var testProto protobuf.Test5
 	testProto.Name = "michael.w"
 	fmt.Println(testProto.String())
 
 	// go text format
-	var testGogoProto gogoprotobuf.Test5
+	var testGogoProto gogoprotobuf.Test6
 	testGogoProto.Name = "michael.w"
 	fmt.Printf("%#v\n", testGogoProto)
 }

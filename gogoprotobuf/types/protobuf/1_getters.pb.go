@@ -20,7 +20,7 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-type Struct struct {
+type Test1 struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -28,8 +28,8 @@ type Struct struct {
 	Salary int32 `protobuf:"varint,1,opt,name=salary,proto3" json:"salary,omitempty"`
 }
 
-func (x *Struct) Reset() {
-	*x = Struct{}
+func (x *Test1) Reset() {
+	*x = Test1{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file__1_getters_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -37,13 +37,13 @@ func (x *Struct) Reset() {
 	}
 }
 
-func (x *Struct) String() string {
+func (x *Test1) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Struct) ProtoMessage() {}
+func (*Test1) ProtoMessage() {}
 
-func (x *Struct) ProtoReflect() protoreflect.Message {
+func (x *Test1) ProtoReflect() protoreflect.Message {
 	mi := &file__1_getters_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -55,12 +55,12 @@ func (x *Struct) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Struct.ProtoReflect.Descriptor instead.
-func (*Struct) Descriptor() ([]byte, []int) {
+// Deprecated: Use Test1.ProtoReflect.Descriptor instead.
+func (*Test1) Descriptor() ([]byte, []int) {
 	return file__1_getters_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *Struct) GetSalary() int32 {
+func (x *Test1) GetSalary() int32 {
 	if x != nil {
 		return x.Salary
 	}
@@ -71,11 +71,10 @@ var File__1_getters_proto protoreflect.FileDescriptor
 
 var file__1_getters_proto_rawDesc = []byte{
 	0x0a, 0x0f, 0x31, 0x5f, 0x67, 0x65, 0x74, 0x74, 0x65, 0x72, 0x73, 0x2e, 0x70, 0x72, 0x6f, 0x74,
-	0x6f, 0x12, 0x05, 0x74, 0x79, 0x70, 0x65, 0x73, 0x22, 0x20, 0x0a, 0x06, 0x53, 0x74, 0x72, 0x75,
-	0x63, 0x74, 0x12, 0x16, 0x0a, 0x06, 0x73, 0x61, 0x6c, 0x61, 0x72, 0x79, 0x18, 0x01, 0x20, 0x01,
-	0x28, 0x05, 0x52, 0x06, 0x73, 0x61, 0x6c, 0x61, 0x72, 0x79, 0x42, 0x0d, 0x5a, 0x0b, 0x2e, 0x2f,
-	0x3b, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62, 0x75, 0x66, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f,
-	0x33,
+	0x6f, 0x12, 0x05, 0x74, 0x79, 0x70, 0x65, 0x73, 0x22, 0x1f, 0x0a, 0x05, 0x54, 0x65, 0x73, 0x74,
+	0x31, 0x12, 0x16, 0x0a, 0x06, 0x73, 0x61, 0x6c, 0x61, 0x72, 0x79, 0x18, 0x01, 0x20, 0x01, 0x28,
+	0x05, 0x52, 0x06, 0x73, 0x61, 0x6c, 0x61, 0x72, 0x79, 0x42, 0x0d, 0x5a, 0x0b, 0x2e, 0x2f, 0x3b,
+	0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62, 0x75, 0x66, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -92,7 +91,7 @@ func file__1_getters_proto_rawDescGZIP() []byte {
 
 var file__1_getters_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file__1_getters_proto_goTypes = []interface{}{
-	(*Struct)(nil), // 0: types.Struct
+	(*Test1)(nil), // 0: types.Test1
 }
 var file__1_getters_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
@@ -109,7 +108,7 @@ func file__1_getters_proto_init() {
 	}
 	if !protoimpl.UnsafeEnabled {
 		file__1_getters_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*Struct); i {
+			switch v := v.(*Test1); i {
 			case 0:
 				return &v.state
 			case 1:

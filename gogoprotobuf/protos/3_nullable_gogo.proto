@@ -6,11 +6,11 @@ option go_package = "./;gogoprotobuf";
 
 import "github.com/gogo/protobuf/gogoproto/gogo.proto";
 
-message Test1 {
-  Test2 test2 = 1[(gogoproto.nullable) = false];
+message Test3 {
+  Test3_1 t = 1[(gogoproto.nullable) = false];
   double num = 2;
 }
 
-message Test2{
+message Test3_1{
   string msg = 1;
 }

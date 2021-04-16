@@ -20,7 +20,7 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-type Test4 struct {
+type Test5 struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -28,8 +28,8 @@ type Test4 struct {
 	Name string `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
 }
 
-func (x *Test4) Reset() {
-	*x = Test4{}
+func (x *Test5) Reset() {
+	*x = Test5{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file__5_stringer_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -37,13 +37,13 @@ func (x *Test4) Reset() {
 	}
 }
 
-func (x *Test4) String() string {
+func (x *Test5) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Test4) ProtoMessage() {}
+func (*Test5) ProtoMessage() {}
 
-func (x *Test4) ProtoReflect() protoreflect.Message {
+func (x *Test5) ProtoReflect() protoreflect.Message {
 	mi := &file__5_stringer_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -55,12 +55,12 @@ func (x *Test4) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Test4.ProtoReflect.Descriptor instead.
-func (*Test4) Descriptor() ([]byte, []int) {
+// Deprecated: Use Test5.ProtoReflect.Descriptor instead.
+func (*Test5) Descriptor() ([]byte, []int) {
 	return file__5_stringer_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *Test4) GetName() string {
+func (x *Test5) GetName() string {
 	if x != nil {
 		return x.Name
 	}
@@ -72,7 +72,7 @@ var File__5_stringer_proto protoreflect.FileDescriptor
 var file__5_stringer_proto_rawDesc = []byte{
 	0x0a, 0x10, 0x35, 0x5f, 0x73, 0x74, 0x72, 0x69, 0x6e, 0x67, 0x65, 0x72, 0x2e, 0x70, 0x72, 0x6f,
 	0x74, 0x6f, 0x12, 0x05, 0x74, 0x79, 0x70, 0x65, 0x73, 0x22, 0x1b, 0x0a, 0x05, 0x54, 0x65, 0x73,
-	0x74, 0x34, 0x12, 0x12, 0x0a, 0x04, 0x6e, 0x61, 0x6d, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09,
+	0x74, 0x35, 0x12, 0x12, 0x0a, 0x04, 0x6e, 0x61, 0x6d, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09,
 	0x52, 0x04, 0x6e, 0x61, 0x6d, 0x65, 0x42, 0x0d, 0x5a, 0x0b, 0x2e, 0x2f, 0x3b, 0x70, 0x72, 0x6f,
 	0x74, 0x6f, 0x62, 0x75, 0x66, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
@@ -91,7 +91,7 @@ func file__5_stringer_proto_rawDescGZIP() []byte {
 
 var file__5_stringer_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file__5_stringer_proto_goTypes = []interface{}{
-	(*Test4)(nil), // 0: types.Test4
+	(*Test5)(nil), // 0: types.Test5
 }
 var file__5_stringer_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
@@ -108,7 +108,7 @@ func file__5_stringer_proto_init() {
 	}
 	if !protoimpl.UnsafeEnabled {
 		file__5_stringer_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*Test4); i {
+			switch v := v.(*Test5); i {
 			case 0:
 				return &v.state
 			case 1:

@@ -4,7 +4,7 @@ package types;
 
 option go_package = "./;protobuf";
 
-message Test3 {
+message Test4 {
   string name = 1;
   double num = 2;
 }

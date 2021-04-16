@@ -6,7 +6,7 @@ option go_package = "./;gogoprotobuf";
 
 import "github.com/gogo/protobuf/gogoproto/gogo.proto";
 
-message Test3 {
+message Test4 {
   string name = 1[(gogoproto.customname) = "MyName"];
   double num = 2[(gogoproto.customname) = "MyNum"];
 }

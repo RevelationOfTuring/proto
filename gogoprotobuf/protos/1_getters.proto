@@ -4,6 +4,6 @@ package types;
 
 option go_package = "./;protobuf";
 
-message Struct{
+message Test1{
   int32 salary = 1;
 }
