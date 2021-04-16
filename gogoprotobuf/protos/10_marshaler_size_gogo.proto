@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package types;
+
+option go_package = "./;gogoprotobuf";
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+option (gogoproto.marshaler_all) = true;
+option (gogoproto.sizer_all) = true;
+
+message Test10 {
+  Test10_1 t = 1;
+  string str = 2;
+  double num = 3;
+}
+
+message Test10_1{
+  string msg = 1;
+}
